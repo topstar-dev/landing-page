@@ -1,0 +1,375 @@
+:root {
+    --color-primary: #414f6b;
+    --color-secondary: #404e6c;
+    --color-primary-light: #61759e;
+    --color-grey: #4d4d4d;
+    --color-grey-light: #afb3bd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    margin: 0px;
+}
+
+/* COLOR */
+.bg--transparent {
+    background-color: transparent;
+}
+
+.bg--white {
+    background-color: #fff;
+}
+.bg--secondary {
+    background-color: var(--color-secondary);
+}
+.fcolor--white {
+    color: #fefeff;
+}
+
+.fcolor--secondary {
+    color: var(--color-secondary);
+}
+
+.fcolor--grey {
+    color: var(--color-grey);
+}
+
+.fcolor--primary {
+    color: var(--color-primary);
+}
+.fcolor--primary-light {
+    color: var(--color-primary-light);
+}
+#canvas {
+    background-color: green;
+    position: absolute;
+    z-index: 9;
+}
+
+/* Typograhy */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+}
+
+.letter_sp--big {
+    letter-spacing: 0.5rem;
+}
+
+.lettter_sp--small {
+    letter-spacing: 0.8px;
+}
+
+/* Layout */
+.box_center {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 60%;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_root {
+    width: 100%;
+    position: absolute;
+    height: 6.5rem;
+    padding: 10px 0px;
+}
+
+.header_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.logo-text_box {
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+.logo-text {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+}
+
+.nav-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Lato";
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    color: inherit;
+}
+.nav-text:hover {
+    text-decoration: none;
+    color: inherit;
+}
+/* Section Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/section_hero.png);
+}
+
+.img_hero {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.hero__title-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 30%;
+    top: 25%;
+}
+
+.hero__title {
+    font-size: 11.5rem;
+    line-height: 12.4rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section_history */
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/section_history.png);
+}
+
+.history__des {
+    position: relative;
+}
+
+.title_section-number {
+    opacity: 0.502;
+    font-size: 13.6rem;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+
+.title_section-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: "Oswald";
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    text-transform: uppercase;
+}
+
+.title_section-des {
+    width: 81.4rem;
+    height: 33.9rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato";
+    padding: 0px 30px;
+}
+
+.history__carousel {
+    background-color: #414f6b;
+    height: 20vh;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+/* SECTION CLIMB */
+.climb {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.climb__layout-title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.climb__layout-tab {
+    background-color: var(--color-primary);
+}
+
+.climb__layout-schedule {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-image: url(../img/bg_section_climb.png);
+    flex: 1;
+}
+
+.climb__menu-title {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-grey-light);
+}
+.climb__menu-title:hover {
+    background-color: var(--color-grey-light);
+    color: var(--color-primary);
+}
+.climb__section-des {
+    height: 5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato";
+}
+
+.climb__schedule {
+    width: 35.3rem;
+    height: 23rem;
+    background-color: rgba(255, 255, 255, 0.702);
+    margin-top: 5rem;
+    margin-left: 3rem;
+    padding: 3rem;
+}
+.climb__schedule-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.climb__list-item {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato";
+}
+/* Footer */
+.footer {
+    padding: 10px;
+}
+.footer__copyright {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Lato";
+}
+.footer__layout-root {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 5px;
+    }
+    .hero__title-box {
+        left: 30%;
+        top: 30%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 6px;
+    }
+    .hero__title-box {
+        left: 27%;
+        top: 39%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+    .hero__title-box {
+        left: 27%;
+        top: 36%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 9px;
+    }
+    .hero__title-box {
+        left: 25%;
+        top: 30%;
+    }
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 10px;
+    }
+    .hero__title-box {
+        left: 30%;
+        top: 25%;
+    }
+}
